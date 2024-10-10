@@ -36,8 +36,18 @@
         alert("You entered: "+inputText);
       }
       button.addEventListener("click",showAlert);
-      
-      
+    </script>
+
+    <button id="ChangeToNumberButton">Change Number</button>
+    <p id="numberBox" placeholder="Number Values"></p>
+    <script>
+      var button = document.getElementById("ChangeToNumberButton");
+      var para = document.getElementById("numberBox");
+      function generateNumber(){
+        var randomNumber = Math.floor(Math.random()*10) +1;
+        para.textContent = "Random Number: " + randomNumber;
+      }
+      button.addEventListener("click",generateRandomNumber);
     </script>
     
   </body>
