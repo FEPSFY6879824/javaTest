@@ -28,7 +28,7 @@
     
     <script>
       function changeText(){
-        const a = document.getElementById("textBox").innerHTML;
+        var a = document.getElementById("textBox").innerHTML;
         document.getElementById("text1").innerHTML=a;
       }
       document.getElementById("buttonToEnter").addEventListener("click",changeText);
