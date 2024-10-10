@@ -23,10 +23,17 @@
     </script>
 
     <input type="text" id="textBox">
+    <button id="buttonToEnter">ENTER</button>
     <p id="text1"></p>
+    
     <script>
-      const a = document.getElementById("textBox").innerHTML;
-      document.getElementById("text1").innerHTML=a;
+      function changeText(){
+        const a = document.getElementById("textBox").innerHTML;
+        document.getElementById("text1").innerHTML=a;
+      }
+      button.addEventListener("click",changeText);
+      
+      
     </script>
     
   </body>
