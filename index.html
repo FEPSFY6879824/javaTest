@@ -22,16 +22,20 @@
       document.getElementById("date_time").innerHTML=d;
     </script>
 
-    <input type="text" id="textBox">
-    <button id="buttonToEnter">ENTER</button>
-    <p id="text1"></p>
+
+
     
+
+    <input type="text" id="textBox" placeholder="Enter text">
+    <button id="buttonToEnter">Show alert</button>
     <script>
-      function changeText(){
-        var a = document.getElementById("textBox").innerHTML;
-        document.getElementById("text1").innerHTML=a;
+      var input = document.getElementById("textBox");
+      var button = document.getElementById("buttonToEnter");
+      function showAlert(){
+        var inputText = input.value
+        alert("You entered: "+inputText);
       }
-      document.getElementById("buttonToEnter").addEventListener("click",changeText);
+      button.addEventListener("click",showAlert);
       
       
     </script>
