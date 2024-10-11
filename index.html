@@ -41,13 +41,13 @@
     <button id="generateButton">Change Number</button>
     <p id="randomNumber" placeholder="Number Values"></p>
     <script>
-      var button = document.getElementById("generateButton");
+      var button1 = document.getElementById("generateButton");
       var paragraph = document.getElementById("randomNumber");
       function generateNumber(){
         var randomNumber = Math.floor(Math.random()*10) +1;
         paragraph.textContent = "Random Number: " + randomNumber;
       }
-      button.addEventListener("click", generateRandomNumber);
+      button1.addEventListener("click", generateRandomNumber);
     </script>
     
   </body>
