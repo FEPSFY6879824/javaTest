@@ -73,7 +73,7 @@
         char.draw(data, options);
       }
     </script>
-
+    <div id="chart_div1"></div>
     <script type="text/javascript">
       google.charts.load('current',{'packages';['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -95,7 +95,7 @@
           hAxis:{title:'Age'},
           vAxis:{title:'Salary'},
           };
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div1'));
         chart.draw(data,options);
           }
     </script>
